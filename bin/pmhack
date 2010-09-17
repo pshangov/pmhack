@@ -24,7 +24,7 @@ Command-line tool to copy a perl module to a development directory
 
 =head1 DESCRIPTION
 
-Sometimes you want to debug an installed perl module, e.g. by sprinkling some print statements. Instead of being tempted to mess with the module code directly, it is a good practice to copy that module to a development directory, edit it there, and then add that directory to C<@INC> so that perl uses the modified code instead of the original. C<pmhack> is a tool to aid that - it grabs a module from <@INC>, puts it in a directory specified in the C<PERL5HACKLIB> environment variable, creating all directories in the module hierarchy as needed, removes any read-only attributes from the file, and prints the new filename to C<STDOUT>.
+Sometimes you want to debug an installed perl module, e.g. by sprinkling some print statements. Instead of being tempted to mess with the module code directly, it is a good practice to copy that module to a development directory, edit it there, and then add that directory to C<@INC> so that perl uses the modified code instead of the original. C<pmhack> is a tool to aid that - it grabs a module from <@INC>, puts it in a directory specified in the C<PERL5HACKLIB> environment variable, creating all additional directories as needed, removes any read-only attributes from the file, and prints the new filename to C<STDOUT>.
 
 =head1 INSTALLATION
 
